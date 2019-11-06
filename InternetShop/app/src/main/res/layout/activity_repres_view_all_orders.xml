@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBasic"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="3dp"
+        android:text="All customers' orders"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Order Id"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_OrderId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:foregroundGravity="right|fill_horizontal"
+            android:hint=""
+            android:inputType="number"
+            android:selectAllOnFocus="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Delivery Date"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_DeliveryDate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="dd/mm/yyyy"
+            android:inputType="date"
+            android:selectAllOnFocus="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Status"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_status"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint=""
+            android:inputType="text"
+            android:selectAllOnFocus="false" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="updateOrder"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="deleteOrder"
+            android:text="Delete" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

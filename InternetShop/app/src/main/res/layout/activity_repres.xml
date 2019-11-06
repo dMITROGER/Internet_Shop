@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBasic"
+    android:orientation="vertical"
+    tools:context=".RepresActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:paddingLeft="130dp"
+        android:paddingTop="30dp"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btProductData"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onButtonClicked"
+        android:text="View products data" />
+
+    <Button
+        android:id="@+id/btOrdersData"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onButtonClicked"
+        android:text="View Orders data" />
+</LinearLayout>

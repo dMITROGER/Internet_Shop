@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DmytroGerasCOMP304_001_Assignment4</string>
+
+    <string-array name="items">
+        <item>s8</item>
+        <item>s8+</item>
+        <item>s9</item>
+
+    </string-array>
+
+</resources>
